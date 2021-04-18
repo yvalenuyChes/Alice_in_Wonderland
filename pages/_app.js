@@ -1,7 +1,9 @@
-import '../styles/globals.css'
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+export default function MyApp({ Component, pageProps }) {
+	return (
+		<>
+			<Component {...pageProps} />
+		</>
+	)
 }
-
-export default MyApp
