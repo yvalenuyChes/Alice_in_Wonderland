@@ -1,4 +1,4 @@
-import Scene from "../components/scene/scene"
+import Scene from "../components/scene"
 import classes from '../styles/header.module.scss'
 
 function Header() {

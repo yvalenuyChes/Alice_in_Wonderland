@@ -5,8 +5,8 @@ export default function Scene() {
 
 	useEffect(() => {
 		const header = document.querySelector('#header')
+		const layers = header.querySelectorAll('.layer')
 		header.addEventListener('mousemove', event => {
-			const layers = header.querySelectorAll('.layer')
 			layers.forEach(layer => {
 				const speed = layer.getAttribute('data-speed')
 				// eslint-disable-next-line no-param-reassign
@@ -14,7 +14,6 @@ export default function Scene() {
 			})
 		})
 		return header.removeEventListener('mousemove', event => {
-			const layers = header.querySelectorAll('.layer')
 			layers.forEach(layer => {
 				const speed = layer.getAttribute('data-speed')
 				// eslint-disable-next-line no-param-reassign

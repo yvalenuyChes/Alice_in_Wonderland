@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Nav from '../src/components/nav'
+import Nav from '../src/components/nav/nav'
 // eslint-disable-next-line react/prop-types
 export default function MainPage({ children }) {
 
