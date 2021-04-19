@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../src/containers/Header'
 import MainPage from '../layout/mainPage'
+import CountrieBlock from '../src/containers/CountriesBlock'
 
 export default function Hello() {
 
@@ -11,7 +12,7 @@ export default function Hello() {
 			</Head>
 			<div>
 				<Header />
-				<p className="paragraf">Halloooooo</p>
+				<CountrieBlock />
 			</div>
 		</MainPage>
 	)

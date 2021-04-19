@@ -3,6 +3,7 @@
 import '../src/styles/nullstyle.scss'
 // eslint-disable-next-line import/no-unresolved
 import '../src/styles/scene.css'
+import '../src/styles/countrieBlock/mainContentImg.css'
 
 
 export default function MyApp({ Component, pageProps }) {
