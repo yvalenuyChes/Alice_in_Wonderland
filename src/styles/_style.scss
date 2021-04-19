@@ -1,10 +1,3 @@
 @import url('./_mixins.scss');
 @import url('./_variables.scss');
-
-body{
-	background-color: $bodyColor;
-}
-
-p{
-	font-size: 40px;
-}
+@import url('nullstyle.scss');

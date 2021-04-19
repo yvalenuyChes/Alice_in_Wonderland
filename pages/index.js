@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../components/header'
+import Header from '../src/containers/Header'
 import MainPage from '../layout/mainPage'
 
 export default function Hello() {
