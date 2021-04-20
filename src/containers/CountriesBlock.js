@@ -1,5 +1,5 @@
-import CountrieBlockGallery from '../components/countrieBlockComponent/countrieBlockGallery'
-import classes from '../styles/countrieBlock/countrieBlock_container.module.scss'
+import CountrieBlockGallery from '../components/countrieBlockComponents/countrieBlockGallery'
+import classes from '../styles/countrieBlockStyles/countrieBlock_container.module.scss'
 
 export default function CountrieBlock() {
 	return (

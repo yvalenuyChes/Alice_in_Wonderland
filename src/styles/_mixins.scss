@@ -32,3 +32,9 @@
 			color: #fff;
 		}
 }
+
+@mixin title {
+	  font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+		text-align: center;
+}

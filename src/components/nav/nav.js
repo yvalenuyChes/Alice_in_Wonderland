@@ -6,10 +6,10 @@
 import { useState } from 'react'
 import Modal from '@material-ui/core/Modal'
 import Link from 'next/link'
-import classes from '../../styles/nav/nav.module.scss'
+import classes from '../../styles/navStyles/nav.module.scss'
 import MainPageLinks from './mainPageLinks'
 import Tabs from './tabs'
-import '../../styles/nav/popupStyle.module.css'
+import '../../styles/navStyles/popupStyle.module.css'
 
 
 export default function Nav() {
