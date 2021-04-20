@@ -1,0 +1,16 @@
+.footer{
+		background-color: #339999;
+
+		&__container{
+			display: flex;
+			padding: 0 20px;
+			position: relative;
+			flex: 0 0 auto;
+		}
+
+	&__links{
+		justify-content: space-between;
+		display: flex;
+		flex: 1 1 35%;
+	}
+}
