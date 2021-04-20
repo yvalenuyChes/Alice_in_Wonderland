@@ -7,4 +7,12 @@
 	&__title{
 		@include title;
 	}
+
+	&__body{
+		padding-top: 50px;
+		display: grid;
+  	grid-template-columns: 400px 400px;
+  	grid-template-rows: 400px 400px;
+		justify-content: center;
+	}
 }
