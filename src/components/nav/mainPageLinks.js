@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import classes from '../../styles/nav/navList.module.scss'
+import classes from '../../styles/navStyles/navList.module.scss'
 
 export default function MainPageLinks() {
 

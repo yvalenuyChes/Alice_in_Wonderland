@@ -1,0 +1,11 @@
+@import '../mixins';
+@import '../variables';
+
+.orderToor{
+	@include container;
+
+	&__title{
+		@include title;
+	}
+}
+
