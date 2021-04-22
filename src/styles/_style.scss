@@ -1,4 +1,4 @@
-@import url('nullstyle.scss');
+@import 'nullstyle.scss';
 
 html {
    scroll-behavior: smooth;
@@ -7,6 +7,4 @@ html {
  html,
  body{
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 !important;
-  min-height: 100%;
  }
