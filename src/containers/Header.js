@@ -1,18 +1,26 @@
 import Scene from "../components/scene"
+import useWindowWidth from "../costomReactHooks/getWindowWidth"
 import classes from '../styles/header.module.scss'
 
+
 function Header() {
+
+	const width = useWindowWidth()
 
 	return (
 		<header
 			className={classes.header}
 			id="header"
 		>
-			<>
-				<Scene />
-				<div className={classes.wave} />
+			{width > 1000
+				? (
+					<>
+						<Scene />
+						<div className={classes.wave} />
+					</>
+				)
+				: <div className={classes.fonPhone} />}
 
-			</>
 			<div className={classes.header__text}>
 				<div className={classes.header__title}>
 					<h2>Мы покажем тебе удивительный мир!

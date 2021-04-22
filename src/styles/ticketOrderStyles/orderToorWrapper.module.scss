@@ -5,7 +5,7 @@
 	@include container;
 
 	&__title{
-		@include title;
+		@include title(black, 30px);
 	}
 }
 

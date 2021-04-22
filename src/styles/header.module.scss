@@ -38,16 +38,16 @@
 	@include commonImageSize(cover);
 }
 
-// .fonPhone{
-// 	position: absolute;
-// 	left: 0;
-// 	top: 0;
-// 	height: 100%;
-// 	width: 100%;
-// 	background: url(../../img/fonforphones.jpg) no-repeat;
-// 	background-size: cover;
-// 	background-position: center;
-// }
+.fonPhone{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/fonforphones.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
 @media(max-width: 1000px){
 
