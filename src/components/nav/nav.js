@@ -8,7 +8,7 @@ import Modal from '@material-ui/core/Modal'
 import Link from 'next/link'
 import classes from '../../styles/navStyles/nav.module.scss'
 import MainPageLinks from './mainPageLinks'
-import Tabs from './tabs'
+import Tabs from '../tabs/tabs'
 import '../../styles/navStyles/popupStyle.module.css'
 
 
@@ -17,7 +17,6 @@ export default function Nav() {
 	const [mouseClickOnLink, isMouseClickOnLink] = useState(false)
 	const [popupOpen, isPopupOpen] = useState(false)
 	// const [openNav, toggleNavOpen] = useState(false)
-	// const pageWidth = window.innerWidth
 
 	const handleOpen = () => {
 		// eslint-disable-next-line no-unused-vars
@@ -29,7 +28,7 @@ export default function Nav() {
 			<div className={classes.popup__content}>
 				<span
 					role="button"
-					className="popup__close close__popup"
+					className="popup__close"
 					onClick={handleOpen}
 				/>
 				<div className="popup__title">Добро пожаловать</div>
