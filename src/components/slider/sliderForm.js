@@ -5,17 +5,20 @@ import InputSlider from '../input/inputForSlider'
 
 export default function SliderForm(
 	{
-		sliderNumber,
-		sliderTitle
+		sliderTitle,
+		sliderFon
 	}
 ) {
 	return (
 		<form
-			className={`${classes.slider__item} ${sliderNumber}`}
+			className={`${classes.slider__item} ${sliderFon}`}
+			// style={{
+			// 	sliderFon
+			// }}
 			onSubmit={submitHendler}
 		>
 			<div className={classes.container}>
-				<h2 className={`${classes.slider__title} ${classes.titleBus}`}>{sliderTitle}</h2>
+				<h2 className={classes.slider__title}>{sliderTitle}</h2>
 				<div className={classes.selectCountrie}>
 					<h3>Выберете место прибытия</h3>
 					<select>
