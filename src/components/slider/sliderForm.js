@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import classes from '../../styles/slider/sliderForm.module.scss'
 import { submitHendler } from '../../pureFunctions/submitHandler'
-import InputSlider from '../input/inputForSlider'
+import InputSlider from '../input/input'
 
 export default function SliderForm(
 	{
@@ -12,9 +12,6 @@ export default function SliderForm(
 	return (
 		<form
 			className={`${classes.slider__item} ${sliderFon}`}
-			// style={{
-			// 	sliderFon
-			// }}
 			onSubmit={submitHendler}
 		>
 			<div className={classes.container}>
