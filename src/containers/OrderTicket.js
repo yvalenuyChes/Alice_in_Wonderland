@@ -1,3 +1,4 @@
+import SliderBlock from '../components/slider/slider'
 import classes from '../styles/ticketOrderStyles/orderToorWrapper.module.scss'
 
 export default function OrderTicket() {
@@ -7,7 +8,7 @@ export default function OrderTicket() {
 				<h2>Заказать билет</h2>
 			</div>
 			<div className={classes.orderToor__body}>
-				Тут будет слайдер
+				<SliderBlock />
 			</div>
 
 		</section>
