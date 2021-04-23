@@ -2,8 +2,6 @@
 @import '../variables';
 
 .orderToor{
-	@include container;
-
 	&__title{
 		@include title(black, 30px);
 	}
