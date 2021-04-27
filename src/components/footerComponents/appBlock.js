@@ -1,6 +1,6 @@
 import classes from '../../styles/footerStyles/footerStyle.module.scss'
-import appleApp from '../../img/apps/apple.png'
-import googleApp from '../../img/apps/play_market.png'
+import appleApp from '../../img/apps/apple.jpg'
+import googleApp from '../../img/apps/GoogleAppStore.png'
 
 export default function AppLinks() {
 	return (
