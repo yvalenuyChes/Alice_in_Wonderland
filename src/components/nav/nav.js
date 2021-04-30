@@ -65,7 +65,7 @@ export default function Nav() {
 						<p
 							// eslint-disable-next-line no-undef
 							onClick={handleOpen}
-							id="last_item"
+							id="auth"
 						>Авторизация</p>
 						<Modal
 							// eslint-disable-next-line no-undef

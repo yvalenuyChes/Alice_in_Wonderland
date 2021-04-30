@@ -2,6 +2,7 @@
 @import '../_variables';
 
 .main_content{
+	margin: $indent;
 	&__container{
 	@include container()
 	}

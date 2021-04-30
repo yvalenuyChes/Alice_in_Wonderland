@@ -1,6 +1,6 @@
 import Scene from "../components/scene"
 import useWindowWidth from "../costomReactHooks/getWindowWidth"
-import classes from '../styles/header.module.scss'
+import classes from '../styles/header/header.module.scss'
 
 
 function Header() {
