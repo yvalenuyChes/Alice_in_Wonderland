@@ -1,0 +1,23 @@
+@media (max-width:767px) {
+	.main_content__text{
+		flex-direction: column;
+	}
+
+	.imgGallary{
+		overflow: hidden;
+		grid-template-columns: 1fr !important;
+		grid-template-rows: repeat(6, 1fr) !important;
+		grid-template-areas:
+			"niderlands"
+			"maldives"
+			"vengria"
+			"mram"
+			"newYork"
+			"kanada" !important;
+	}
+
+	.limiter{
+		height: 100%;
+		width: 200%;
+	}
+}

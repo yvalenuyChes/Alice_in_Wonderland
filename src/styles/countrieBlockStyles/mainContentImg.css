@@ -1,3 +1,8 @@
+.img__wrapper{
+	height: 100%;
+	width: 100%;
+}
+
 .blockImg{
 	flex-direction: column;
 	width: 100%;

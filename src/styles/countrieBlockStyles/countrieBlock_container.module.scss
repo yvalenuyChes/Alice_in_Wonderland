@@ -1,10 +1,11 @@
 @import '../_mixins';
 @import '../_variables';
+@import './countrieBlockAdaptive.module.scss';
 
 .main_content{
 	margin: $indent;
 	&__container{
-	@include container()
+	@include container;
 	}
 }
 

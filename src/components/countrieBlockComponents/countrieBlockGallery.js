@@ -15,6 +15,7 @@ export default function CountrieBlockGallery() {
 		<div className={classes.imgGallary}>
 			<div className={classes.niderlands}>
 				<MainContentImg
+					limiter={classes.limiter}
 					imgSrc={niderlandsImg}
 					title="Нидерланды"
 					content__text_subtitle={NIRERLAND_TEXT}
@@ -36,6 +37,7 @@ export default function CountrieBlockGallery() {
 			</div>
 			<div className={classes.mram}>
 				<MainContentImg
+					limiter={classes.limiter}
 					imgSrc={mramCanyonImg}
 					title="Мраморный каньон"
 					content__text_subtitle={MRAM_KANYON_TEXT}

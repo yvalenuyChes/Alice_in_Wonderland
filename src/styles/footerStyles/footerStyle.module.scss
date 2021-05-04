@@ -90,3 +90,44 @@
 		}
 	}
 }
+
+
+
+// ADAPTIV
+
+@media(max-width: 1000px){
+	.footer__container{
+		text-align: center;
+		flex-direction:column;
+
+		.footer__socialLinks{
+			margin: 0 auto !important;
+			padding-bottom: 20px !important;
+			position: static !important;
+			order: 1 !important;
+			text-align: center !important;
+		}
+
+		.footer__links{
+			text-align: center;
+		}
+
+		.copyraiting{
+			padding: 0;
+			text-align: center;
+			position: static;
+			margin: 0 auto;
+			order:2;
+		}
+
+		.footer__app{
+			margin: 0;
+		}
+
+		.footer__app-title{
+			margin: 0;
+		}
+	}
+
+
+}
