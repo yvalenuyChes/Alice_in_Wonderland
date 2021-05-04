@@ -5,7 +5,7 @@ import InfoLinks from '../components/footerComponents/infoLinks'
 import ShortInfoBlock from '../components/footerComponents/shortInfoBlock'
 import classes from '../styles/footerStyles/footerStyle.module.scss'
 import useWindowWidth from '../costomReactHooks/getWindowWidth'
-import { forTootists } from '../components/accordion/accordionContent'
+import { forTootists, moreAboutCompany } from '../components/accordion/accordionContent'
 
 export default function Footer() {
 
@@ -22,10 +22,11 @@ export default function Footer() {
 					: <>
 						<AccordionBlock
 							title="Туристам"
-							content={forTootists}
+							content={forTootists()}
 						/>
 						<AccordionBlock
 							title="О компании"
+							content={moreAboutCompany()}
 						/>
 					</>
 				}
