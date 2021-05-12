@@ -17,7 +17,7 @@ import {
 
 export function forTootists() {
 	return (
-		<ul>
+		<ul className="accordionList">
 			<li>{TOORISTS_FIRST_ITEM}</li>
 			<li>{TOORISTS_SECOND_ITEM}</li>
 			<li>{TOORISTS_THIRD_ITEM}</li>
@@ -31,7 +31,7 @@ export function forTootists() {
 
 export function moreAboutCompany() {
 	return (
-		<ul>
+		<ul lassName="accordionList">
 			<li>{ABOUT_COMPANY_FIRST_ITEM}</li>
 			<li>{ABOUT_COMPANY_SECOND_ITEM}</li>
 			<li>{ABOUT_COMPANY_THIRD_ITEM}</li>
