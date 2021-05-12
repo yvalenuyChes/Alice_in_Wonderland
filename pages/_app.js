@@ -9,6 +9,7 @@ import '../src/styles/inputStyles/inputStyles.css'
 import '../src/styles/slider/sliderToggleButtons.css'
 import '../src/styles/modalBody/modalBody.css'
 import '../src/styles/tabsStyles/tabStyle.css'
+import '../src/styles/accordionStyles/accordionStyles.css'
 
 export default function MyApp({ Component, pageProps }) {
 	return (

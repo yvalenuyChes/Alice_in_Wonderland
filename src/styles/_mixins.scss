@@ -8,7 +8,7 @@
 @mixin container {
 	max-width: $maxWidth;
 	margin: 0 auto;
-	padding: 0px 20px;
+	padding: 0px 20px 100px 20px;
 }
 
 @mixin commonButton() {
@@ -19,7 +19,7 @@
 		justify-content: center;
 		background-color: #339999;
 		width: 200px;
-		height: 50px;
+		line-height: 50px;
 		border-radius: 10px;
 		box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
 
@@ -34,6 +34,7 @@
 }
 
 @mixin title($color, $fontSize) {
+		padding: $titlePadding;
 		color:$color;
 	  font-family: 'Oswald', sans-serif;
     font-size: $fontSize;

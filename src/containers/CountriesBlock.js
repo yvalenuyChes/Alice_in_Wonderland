@@ -12,7 +12,7 @@ export default function CountrieBlock() {
 						>Предложения</a>
 					</div>
 					<div
-						className={`${classes.content__subtitle} ${classes.classLeft} ${classes.animItems} ${classes.overflow}`}
+						className={`${classes.main_content__subtitle} ${classes.classLeft} ${classes.animItems} ${classes.overflow}`}
 					>
 						Увидь то, что не увидишь из своего окна,
 						<br />
