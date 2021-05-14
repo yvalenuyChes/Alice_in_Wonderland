@@ -1,4 +1,4 @@
-import Tabs from './tabs'
+import Tabs from '../tabs/tabs'
 
 export default function modalBody() {
 	return <>
