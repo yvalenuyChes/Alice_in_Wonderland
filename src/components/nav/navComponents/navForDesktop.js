@@ -15,8 +15,7 @@ function NavListDesktop() {
 	const [mouseClickOnLink, isMouseClickOnLink] = useState(false)
 
 	const popupOpen = useSelector(state => state.popupOpen)
-	const openModalWindow = useDispatch({ type: 'OPEN_MODAL_WINDOW' })
-	const closeModalWindow = useDispatch({ type: 'CLOSE_MODAL_WINDOW' })
+	const dispatch = useDispatch()
 
 	return (
 		<div
@@ -29,7 +28,7 @@ function NavListDesktop() {
 				tabIndex={0}
 			>
 				<span>Главная</span>
-				{popupOpen
+				{mouseClickOnLink
 					? <MainPageLinks />
 					: null
 				}
@@ -38,12 +37,12 @@ function NavListDesktop() {
 			// className={classes.navbar__item}
 			>
 				<p
-					onClick={openModalWindow}
+					onClick={() => dispatch({ type: 'OPEN_MODAL_WINDOW' })}
 					id="auth"
 				>Авторизация</p>
 				<Modal
 					open={popupOpen}
-					onClose={closeModalWindow}
+					// onClose={() => dispatch({ type: 'CLOSE_MODAL_WINDOW' })}
 					aria-labelledby="simple-modal-title"
 					aria-describedby="simple-modal-description"
 				>
