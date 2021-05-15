@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import classes from '../../styles/footerStyles/footerShortInfoStyle.module.scss'
 
 export default function ShortInfoBlock() {
@@ -16,13 +17,13 @@ export default function ShortInfoBlock() {
 				<h3 className={classes.copyraiting}>2019-2021 © Alise in Wonderland</h3>
 				<div className={classes.footer__socialLinks}>
 					<div className={`${classes.vk} ${classes.socialLink}`}>
-						<a href="##" className="socialLink-icon"><i className="fab fa-vk i" /></a>
+						<a href="##" className="socialLink-icon"><i aria-hidden className="fab fa-vk i" /></a>
 					</div>
 					<div className={`${classes.twitter} ${classes.socialLink}`}>
-						<a href="##" className="socialLink-icon"><i className="fa-twitter fab i" /></a>
+						<a href="##" className="socialLink-icon"><i aria-hidden className="fa-twitter fab i" /></a>
 					</div>
 					<div className={`${classes.insta} ${classes.sociaLlink}`}>
-						<a href="##" className="socialLink-icon"><i className="fab fa-instagram i" /></a>
+						<a href="##" className="socialLink-icon"><i aria-hidden className="fab fa-instagram i" /></a>
 					</div>
 				</div>
 			</div>

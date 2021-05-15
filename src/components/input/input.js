@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-boolean-value */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/prop-types */
@@ -36,7 +37,7 @@ export default function InputSlider(
 					onBlur={() => changeFocus(prev => !isFocus)}
 					className="input-order-ticket"
 					type={type}
-					required="true"
+					required={true}
 				/>
 			</div>
 		</>
