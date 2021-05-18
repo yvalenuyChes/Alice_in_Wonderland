@@ -6,7 +6,8 @@ import { createStore, applyMiddleware } from 'redux'
 let store
 
 const initialState = {
-	popupOpen: false
+	popupOpen: false,
+	navOpen: false
 }
 
 export default function rootReduser(state = initialState, action) {
@@ -19,6 +20,10 @@ export default function rootReduser(state = initialState, action) {
 		case 'CLOSE_MODAL_WINDOW':
 			return {
 				popupOpen: false
+			}
+		case 'TOGGLE_NAV':
+			return {
+				navOpen: !state.navOpen
 			}
 		default:
 			return state

@@ -12,7 +12,7 @@ export default function Footer() {
 	const width = useWindowWidth()
 
 	return (
-		<section className={classes.footer}>
+		<section className={classes.footer} id="footer">
 			<div className={classes.footer__container}>
 				{width > 1000 ?
 					<div className={classes.footer__links}>

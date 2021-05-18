@@ -7,6 +7,20 @@ function Header() {
 
 	const width = useWindowWidth()
 
+
+
+	// function shouldBodyLock() {
+	// 	if (bodyLock) {
+	// 		document.body.classList.add('bodyLock')
+	// 	} else {
+	// 		document.body.classList.remove('bodyLock')
+	// 	}
+	// }
+
+
+
+
+
 	return (
 		<header
 			className={classes.header}

@@ -6,8 +6,9 @@
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Modal from '@material-ui/core/Modal'
-import MainPageLinks from '../mainPageLinks'
+import MainPageLinks from './mainPageLinks'
 import ModalBody from './navModalBody'
+import classes from '../../../styles/navStyles/nav.module.scss'
 
 
 function NavListDesktop() {
@@ -19,10 +20,10 @@ function NavListDesktop() {
 
 	return (
 		<div
-		// className={classes.navbar__list}
+			className={classes.navbar__list}
 		>
 			<div
-				// className={classes.navbar__item}
+				className={classes.navbar__item}
 				onClick={() => isMouseClickOnLink(!mouseClickOnLink)}
 				role="menuitem"
 				tabIndex={0}
@@ -34,7 +35,7 @@ function NavListDesktop() {
 				}
 			</div>
 			<div
-			// className={classes.navbar__item}
+				className={classes.navbar__item}
 			>
 				<p
 					onClick={() => dispatch({ type: 'OPEN_MODAL_WINDOW' })}
@@ -42,9 +43,6 @@ function NavListDesktop() {
 				>Авторизация</p>
 				<Modal
 					open={popupOpen}
-					// onClose={() => dispatch({ type: 'CLOSE_MODAL_WINDOW' })}
-					aria-labelledby="simple-modal-title"
-					aria-describedby="simple-modal-description"
 				>
 					<ModalBody />
 				</Modal>
