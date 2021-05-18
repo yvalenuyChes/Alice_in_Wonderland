@@ -1,0 +1,51 @@
+.nav__button{
+	z-index: 11;
+	position: relative;
+	height: 20px;
+	width: 30px;
+}
+
+.nav__button::after,
+.nav__button::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all .3s ease;
+}
+
+.nav__button span{
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	top: 9px;
+	background-color: #fff;
+}
+
+.nav__button::after{
+	bottom: 0;
+}
+
+.nav__button::before{
+	top: 0;
+}
+
+
+.nav__button.active span{
+	display: none;
+}
+
+.nav__button.active::after{
+	background-color: #000;
+	bottom: 9px;
+	transform: rotate(45deg);
+
+}
+
+.nav__button.active::before{
+	background-color: #000;
+	transform: rotate(-45deg);
+	top: 9px;
+}

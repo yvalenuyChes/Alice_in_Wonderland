@@ -10,7 +10,7 @@ import ten from '../img/advantagesImg/number.svg'
 export default function Advantages() {
 
 	return (
-		<section className={classes.advantagesBlock}>
+		<section className={classes.advantagesBlock} id="advantages">
 			<div className={classes.advantagesBlock__title}>
 				<h2>Почему именно наша фирма?</h2>
 			</div>
