@@ -12,6 +12,9 @@ import '../src/styles/tabsStyles/tabStyle.css'
 import '../src/styles/accordionStyles/accordionStyles.css'
 import '../src/styles/navStyles/stylesForPhones.css'
 import '../src/styles/navStyles/navStylesForPhonesBody.css'
+import '../src/styles/countrieBlockStyles/countrieBlock_container.css'
+import '../src/styles/countrieBlockStyles/countrieBlockGallery.css'
+
 
 
 

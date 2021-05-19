@@ -24,4 +24,12 @@
 		height: 100%;
 		width: 200%;
 	}
+
+	.limiter .block_text{
+		width: 50% !important;
+	}
+
+	.limiter .countrieDesk{
+		right: 50% !important;
+	}
 }
