@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
-import classnames from 'classnames'
 import { useState } from "react"
 import { CSSTransition } from 'react-transition-group'
 
