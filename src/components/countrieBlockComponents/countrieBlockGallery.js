@@ -1,6 +1,4 @@
 import MainContentImg from './mainContentImg'
-import classes from '../../styles/countrieBlockStyles/countrieBlockGallery.module.scss'
-
 
 import niderlandsImg from '../../img/countries/nider.png'
 import maldivesImg from '../../img/countries/mal.png'
@@ -12,45 +10,45 @@ import { KANADA_TEXT, MALDIVES_TEXT, MRAM_KANYON_TEXT, NIRERLAND_TEXT, NY_TEXT, 
 
 export default function CountrieBlockGallery() {
 	return (
-		<div className={classes.imgGallary}>
-			<div className={classes.niderlands}>
+		<div className="imgGallary">
+			<div className="niderlands">
 				<MainContentImg
-					limiter={classes.limiter}
+					limiter="limiter"
 					imgSrc={niderlandsImg}
 					title="Нидерланды"
 					content__text_subtitle={NIRERLAND_TEXT}
 				/>
 			</div>
-			<div className={classes.maldives}>
+			<div className="maldives">
 				<MainContentImg
 					imgSrc={maldivesImg}
 					title="Мальдивы"
 					content__text_subtitle={MALDIVES_TEXT}
 				/>
 			</div>
-			<div className={classes.vengria}>
+			<div className="vengria">
 				<MainContentImg
 					imgSrc={vengriaImg}
 					title="Венгрия"
 					content__text_subtitle={VENGRIA_TEXT}
 				/>
 			</div>
-			<div className={classes.mram}>
+			<div className="mram">
 				<MainContentImg
-					limiter={classes.limiter}
+					limiter="limiter"
 					imgSrc={mramCanyonImg}
 					title="Мраморный каньон"
 					content__text_subtitle={MRAM_KANYON_TEXT}
 				/>
 			</div>
-			<div className={classes.newYork}>
+			<div className="newYork">
 				<MainContentImg
 					imgSrc={newYorkImg}
 					title="Нью Йорк"
 					content__text_subtitle={NY_TEXT}
 				/>
 			</div>
-			<div className={classes.kanada}>
+			<div className="kanada">
 				<MainContentImg
 					imgSrc={kanadaImg}
 					title="Канада"

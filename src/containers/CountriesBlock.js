@@ -1,18 +1,17 @@
 import CountrieBlockGallery from '../components/countrieBlockComponents/countrieBlockGallery'
-import classes from '../styles/countrieBlockStyles/countrieBlock_container.module.scss'
 
 export default function CountrieBlock() {
 	return (
-		<section className={classes.main_content} id="main__content">
-			<div className={classes.main_content__container}>
-				<div className={classes.main_content__text}>
-					<div className={`${classes.main_content__buttPerpose} ${classes.classRight} ${classes.animItems} ${classes.overflow} ${classes.button}`}>
+		<section className="main_content" id="main__content">
+			<div className="main_content__container">
+				<div className="main_content__text">
+					<div className="main_content__buttPerpose button">
 						<a
 							href="/countries"
 						>Предложения</a>
 					</div>
 					<div
-						className={`${classes.main_content__subtitle} ${classes.classLeft} ${classes.animItems} ${classes.overflow}`}
+						className="main_content__subtitle"
 					>
 						Увидь то, что не увидишь из своего окна,
 						<br />

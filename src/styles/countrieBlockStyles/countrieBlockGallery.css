@@ -1,4 +1,4 @@
-@import './countrieBlockAdaptive.module.scss';
+@import './countrieBlockAdaptive.css';
 
 .flexWrapper{
 	display: flex;

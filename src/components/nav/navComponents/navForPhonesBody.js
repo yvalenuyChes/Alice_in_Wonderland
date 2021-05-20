@@ -39,7 +39,7 @@ export default function NavForPhonesBody() {
 					<div
 						onClick={() => dispatch({ type: 'OPEN_MODAL_WINDOW' }, { type: 'NAV_OPEN' })}
 						id="auth"
-					>Test</div>
+					>Авторизация</div>
 					<Modal
 						open={popupOpen}
 					>

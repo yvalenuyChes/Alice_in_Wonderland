@@ -7,7 +7,7 @@ import Advantages from '../src/containers/AdvantagesBlock'
 import Footer from '../src/containers/Footer'
 
 
-export default function Hello() {
+export default function Main() {
 
 	return (
 		<MainPage>
