@@ -3,11 +3,11 @@
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import classNames from 'classnames'
-import NavForPhonesBody from './navForPhonesBody'
+import NavBody from './navBody'
 
 
 
-export default function NavForPhones() {
+export default function NavBodyWrapper() {
 
 	const navOpen = useSelector(state => state.navOpen)
 	const dispatch = useDispatch()
@@ -26,6 +26,15 @@ export default function NavForPhones() {
 		}
 	}, [navOpen])
 
+	useEffect(() => {
+		const wrapper = document.querySelector('.wrapper')
+		if (navOpen) {
+			wrapper.classList.add('blur')
+		} else {
+			wrapper.classList.remove('blur')
+		}
+	}, [navOpen])
+
 	return (
 		<>
 			<div
@@ -36,7 +45,7 @@ export default function NavForPhones() {
 			>
 				<span />
 			</div>
-			<NavForPhonesBody />
+			<NavBody />
 		</>
 	)
 }

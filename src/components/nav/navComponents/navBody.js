@@ -8,7 +8,7 @@ import { MainPageTransitions, KanadaPageTransitions } from './navLinks'
 import AccordionBlock from '../../accordion/accordion'
 import ModalBody from './navModalBody'
 
-export default function NavForPhonesBody() {
+export default function NavBody() {
 
 	const navOpen = useSelector(state => state.navOpen)
 	const popupOpen = useSelector(state => state.popupOpen)
@@ -35,7 +35,7 @@ export default function NavForPhonesBody() {
 						content={<KanadaPageTransitions />}
 					/>
 				</div>
-				<div>
+				<div className="nav_phones__body-item login">
 					<div
 						onClick={() => dispatch({ type: 'OPEN_MODAL_WINDOW' }, { type: 'NAV_OPEN' })}
 						id="auth"
