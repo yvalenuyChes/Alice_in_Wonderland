@@ -5,7 +5,6 @@ import { useEffect } from "react"
 export default function ButtonToTop() {
 
 	useEffect(() => {
-
 		const offset = 100
 		const scrollUp = document.querySelector('.scroll_up')
 		const scrollUpSvgPath = document.querySelector('.scroll_up__path')
@@ -23,7 +22,7 @@ export default function ButtonToTop() {
 		} else {
 			scrollUp.classList.remove('active')
 		}
-		return () => updateDashoffset()
+		updateDashoffset()
 	})
 
 
