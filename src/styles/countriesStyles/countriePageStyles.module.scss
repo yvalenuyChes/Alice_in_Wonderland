@@ -1,3 +1,4 @@
+@import '../mixins';
 .wrapper{
    width: 100%;
 }
@@ -50,12 +51,14 @@
 .content_img {
 	height: 500px;
 	min-width: 800px;
+	max-width: 1000px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	border: 1px solid gray;
+	margin: 0 auto;
 }
 
 
@@ -84,46 +87,34 @@
 }
 
 #firstCardItem{
-	color:white;
-	background: url(../../img/kanadaImg/kitchen/3.png) no-repeat;
-	background-size: cover;
-	background-position: center; 
+	background: url(../../img/kanadaImg/kitchen/1.png) no-repeat;
+	@include cardImg;
 }
 
 #secondCardItem{
-	color:white;
-	background: url(../../img/kanadaImg/intresting/1.png) no-repeat;
-	background-size: cover;
-	background-position: center; 
+	background: url(../../img/kanadaImg/kitchen/2.png) no-repeat;
+	@include cardImg;
 }
 
 #thirdCardItem{
-	color:white;
 	background: url(../../img/kanadaImg/kitchen/3.png) no-repeat;
-	background-size: cover;
-	background-position: center; 
+	@include cardImg;
 }
 
-// #fourthCardItem{
-// 	color:white;
-// 	background: url(.../../img/kanadaImg/intresting/1.png) no-repeat;
-// 	background-size: cover;
-// 	background-position: center; 
-// }
+#fourthCardItem{
+	background: url(../../img/kanadaImg/intresting/1.png) no-repeat;
+	@include cardImg;
+}
 
-// #fifthCardItem{
-// 	color:white;
-// 	background: url(../../img/kanadaImg/intresting/2.png) no-repeat;
-// 	background-size: cover;
-// 	background-position: center; 
-// }
+#fifthCardItem{
+	background: url(../../img/kanadaImg/intresting/2.png) no-repeat;
+	@include cardImg;
+}
 
-// #sixthCardItem{
-// 	color:white;
-// 	background: url(../../img/kanadaImg/intresting/3.png) no-repeat;
-// 	background-size: cover;
-// 	background-position: center; 
-// }
+#sixthCardItem{
+	background: url(../../img/kanadaImg/intresting/3.png) no-repeat;
+	@include cardImg;
+}
 
 @media(max-width: 767px){
    .content__article{

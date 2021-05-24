@@ -40,3 +40,9 @@
     font-size: $fontSize;
 		text-align: center;
 }
+
+@mixin cardImg {
+	color:white;
+	background-size: cover;
+	background-position: center; 
+}

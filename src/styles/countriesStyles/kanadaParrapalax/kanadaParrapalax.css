@@ -1,4 +1,5 @@
 .page{
+	z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -23,13 +24,11 @@
 } 
 
 .paralax__montain_2{
-   z-index: -1;
    background: url('../../../img/parralax_countrie/m_2.png') bottom right / 45% no-repeat; 
 }
 
 
 .paralax__montain_3{
-   z-index: -1;
    background: url('../../../img/parralax_countrie/m_3.png') bottom left  / 100% no-repeat; 
 }
 
