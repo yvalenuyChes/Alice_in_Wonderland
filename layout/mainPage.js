@@ -32,10 +32,12 @@ export default function MainPage({ children }) {
 
 	return (
 		<>
-			<main>
-				{scrolling ? null : <Nav />}
-				{children}
-			</main>
+			{scrolling ? null : <Nav />}
+			<div className="wrapper">
+				<main>
+					{children}
+				</main>
+			</div>
 		</>
 	)
 }
