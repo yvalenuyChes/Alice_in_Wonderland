@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import ButtonToTop from '../src/components/buttonToTop/bottonToTop'
+
 import Nav from '../src/components/nav/nav'
 // eslint-disable-next-line react/prop-types
 export default function MainPage({ children }) {
@@ -37,6 +39,7 @@ export default function MainPage({ children }) {
 				<main>
 					{children}
 				</main>
+				<ButtonToTop />
 			</div>
 		</>
 	)

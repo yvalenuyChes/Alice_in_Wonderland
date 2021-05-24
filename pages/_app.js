@@ -15,6 +15,7 @@ import '../src/styles/navStyles/navStylesForPhonesBody.css'
 import '../src/styles/countrieBlockStyles/countrieBlock_container.css'
 import '../src/styles/countrieBlockStyles/countrieBlockGallery.css'
 import '../src/styles/countriesStyles/kanadaParrapalax/kanadaParrapalax.css'
+import '../src/styles/buttonToTopStyles/buttonToTop.css'
 
 
 
