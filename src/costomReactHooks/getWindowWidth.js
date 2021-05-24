@@ -4,7 +4,7 @@ function useWindowWidth() {
 	const [width, setWidth] = useState(0)
 	useEffect(() => {
 		setWidth(window.innerWidth)
-	}, [])
+	}, [width])
 	return width
 }
 
