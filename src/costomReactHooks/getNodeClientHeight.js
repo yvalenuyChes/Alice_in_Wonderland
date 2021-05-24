@@ -6,7 +6,7 @@ export function getNode(node) {
 	const [documentNode, setDocumentNode] = useState('')
 	useEffect(() => {
 		setDocumentNode(document.querySelector(node))
-	}, [])
+	}, [documentNode])
 	return documentNode
 }
 
@@ -16,7 +16,7 @@ export function getNodeClientHeight(node) {
 	let height = 0
 	useEffect(() => {
 		setDocumentNode(document.querySelector(node))
-	}, [])
+	}, [documentNode])
 	height = documentNode.offsetHeight
 	return height
 }
