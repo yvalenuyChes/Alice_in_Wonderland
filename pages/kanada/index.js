@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import MainPage from "../../layout/mainPage"
 import useWindowWidth from '../../src/costomReactHooks/getWindowWidth'
-import ParralaxCountries from '../../src/components/countriePageComponents/parralax countries/parralaxKanada'
+import ParralaxKanada from '../../src/components/countriePageComponents/parralax countries/parralaxKanada'
 import SlidingSlider from '../../src/components/countriePageComponents/sliding slider/slider'
 import Card from '../../src/components/countriePageComponents/card/card'
 import {
@@ -18,24 +18,24 @@ export default function KanadaPage() {
 
 	const pageWidth = useWindowWidth()
 
+
 	return (
 		<MainPage>
 			<Head>
 				<title>Канада</title>
 			</Head>
 			<section className={classes.wrapper}>
-
-				<ParralaxCountries />
+				<ParralaxKanada />
 				<div className="content-paralax">
 					<div className="content__body">
-						<div className={classes.content__header}>
+						<div className={classes.content__header} id="kanada_header">
 							<h1 className={classes.content__title}>Канада</h1>
 							<h2 className={classes.content__subtitle}>Мы покажем удивительный мир канады</h2>
 						</div>
 						<div className={classes.content__article}>
 							<div className={classes.content__main}>
 								<div className={classes.row}>
-									<div className={classes.col}>
+									<div className={classes.col} id="kanada_kitchen">
 										<h3>Еда</h3>
 										{pageWidth > 1000
 											? <section className={classes.content_img}>
@@ -76,7 +76,7 @@ export default function KanadaPage() {
 									</div>
 								</div>
 								<div className={classes.row}>
-									<div className={classes.col}>
+									<div className={classes.col} id="kanada_interesting_places">
 										<h3>Интересные места</h3>
 										{pageWidth > 1000
 											? <section className={classes.content_img}>

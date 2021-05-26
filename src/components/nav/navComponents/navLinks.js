@@ -61,7 +61,7 @@ export function KanadaPageTransitions() {
 				onClick={() => dispatch({ type: 'TOGGLE_NAV' })}
 			>
 				<Link
-					href='/kanada/#kanada_header'>
+					href='/kanada/'>
 					<a>Канада</a >
 				</Link>
 			</li>
@@ -79,7 +79,7 @@ export function KanadaPageTransitions() {
 				onClick={() => dispatch({ type: 'TOGGLE_NAV' })}
 			>
 				<Link
-					href='/kanada/#kanada_attractions'>
+					href='/kanada/#kanada_interesting_places'>
 					<a>Достопримечательности</a >
 				</Link>
 			</li>
