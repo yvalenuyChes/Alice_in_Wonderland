@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import MainPage from "../../layout/mainPage"
 import useWindowWidth from '../../src/costomReactHooks/getWindowWidth'
-import ParralaxCountries from '../../src/components/countriePageComponents/parralax countries/parralaxKanada'
+import ParralaxKanada from '../../src/components/countriePageComponents/parralax countries/parralaxKanada'
 import SlidingSlider from '../../src/components/countriePageComponents/sliding slider/slider'
 import Card from '../../src/components/countriePageComponents/card/card'
 import {
@@ -24,8 +24,7 @@ export default function KanadaPage() {
 				<title>Канада</title>
 			</Head>
 			<section className={classes.wrapper}>
-
-				<ParralaxCountries />
+				<ParralaxKanada />
 				<div className="content-paralax">
 					<div className="content__body">
 						<div className={classes.content__header}>

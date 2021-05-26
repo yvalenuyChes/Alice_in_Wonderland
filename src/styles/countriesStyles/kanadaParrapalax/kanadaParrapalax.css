@@ -31,13 +31,3 @@
 .paralax__montain_3{
    background: url('../../../img/parralax_countrie/m_3.png') bottom left  / 100% no-repeat; 
 }
-
-.paralax__fog{
-	background: url('../../../img/parralax_countrie/fog_1.png') bottom  / 100% no-repeat;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 2 
-} 
