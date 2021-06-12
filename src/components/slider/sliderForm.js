@@ -53,7 +53,7 @@ export default function SliderForm(
 				</div>
 				<div className={`${classes.tabButton} ${classes.orderButton}`}>
 					<button
-						type="button"
+						type="submit"
 					// onClick={orderTicketHendlerBus}
 					>Заказать билет</button>
 				</div>
