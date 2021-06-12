@@ -14,7 +14,7 @@ export function MainPageTransitions() {
 				className="navMobileLink"
 				onClick={() => dispatch({ type: 'TOGGLE_NAV' })}>
 				<Link
-					href='/#header'>
+					href='/'>
 					<a>Главная</a >
 				</Link>
 			</li>

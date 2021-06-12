@@ -14,6 +14,23 @@
 .block_form{
 	padding: 20px;
 	width: 100%;
+
+}
+
+
+.registration-link{
+	text-align: center;
+	padding: 10px 0px 0px 0px;
+}
+
+.registration-link a{
+	color: #000;
+	transition: .5s all ease;
+}
+
+.registration-link a:hover{
+	color: cornflowerblue;	
+	transition: .5s all ease;
 }
 
 .labels_container{

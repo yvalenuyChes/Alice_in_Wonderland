@@ -4,10 +4,11 @@
 import { useEffect, useState } from "react"
 
 
-export default function getNode(node) {
+export default function getNode(selectionNode, node) {
 	const [documentNode, setDocumentNode] = useState('')
 	useEffect(() => {
-		setDocumentNode(document.querySelector(node))
+		const selector = document.querySelector(selectionNode)
+		setDocumentNode(selector.querySelector(node))
 		return () => setDocumentNode('')
 	}, [documentNode])
 	return documentNode

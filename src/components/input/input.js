@@ -9,6 +9,8 @@ export default function InputSlider(
 	{
 		label,
 		type,
+		name,
+		inputMode
 	}
 ) {
 
@@ -29,15 +31,18 @@ export default function InputSlider(
 			<div
 				className={toggleOnFocusInput}
 			>
-				<label className="label-order-ticket"> {label} </label>
+				<label className="label-order-ticket" htmlFor={name}> {label} </label>
 				<input
+					inputMode={inputMode}
+					id={name}
+					name={name}
 					onChange={onChange}
 					value={value}
 					onFocus={() => changeFocus(prev => !isFocus)}
 					onBlur={() => changeFocus(prev => !isFocus)}
 					className="input-order-ticket"
 					type={type}
-					required={true}
+					required
 				/>
 			</div>
 		</>

@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useDispatch } from 'react-redux'
-import Tabs from '../../tabs/tabs'
+import Link from 'next/link'
+import Input from '../../input/input'
 import classes from '../../../styles/modalBody/modalBody.module.scss'
 
 function ModalBody() {
@@ -24,7 +26,34 @@ function ModalBody() {
 					/>
 					<div className={classes.popup__title}>Добро пожаловать</div>
 					<div className={classes.popup__main} />
-					<Tabs />
+					<form
+						method="POST"
+						action="/enter"
+						className="tab_form"
+					>
+						<div className="inputBox">
+							<Input
+								label="Введите e-mail"
+								type="email"
+								name="authEmail"
+								inputMode="email"
+							/>
+						</div>
+						<div className="inputBox">
+							<Input
+								label="Введите пароль"
+								type="password"
+								name="authPassword"
+								inputMode="text"
+							/>
+						</div>
+						<button
+							type="submit"
+							className="tab_button"
+						>Войти</button>
+						<a href="##" className="tab_link">Я забыл e-mail или пароль</a>
+						<p className="registration-link">Нет аккаунта? <Link href="/registration"><a className="tab_linkReg"> Зарегестируйтесь</a></Link></p>
+					</form>
 				</div>
 			</div>
 		</>
