@@ -28,7 +28,7 @@ function ModalBody() {
 					<div className={classes.popup__main} />
 					<form
 						method="POST"
-						action="/enter"
+						action="/auth"
 						className="tab_form"
 					>
 						<div className="inputBox">

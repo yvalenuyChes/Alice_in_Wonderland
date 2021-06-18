@@ -37,7 +37,7 @@ export default function InputSlider(
 					id={name}
 					name={name}
 					onChange={onChange}
-					value={value}
+					value={value.trim()}
 					onFocus={() => changeFocus(prev => !isFocus)}
 					onBlur={() => changeFocus(prev => !isFocus)}
 					className="input-order-ticket"

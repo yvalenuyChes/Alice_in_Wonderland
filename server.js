@@ -1,8 +1,10 @@
+/* eslint-disable global-require */
 /* eslint-disable no-console */
 const express = require('express')
 const mongoose = require('mongoose')
 const next = require('next')
-const { MONGODB_URI } = require('./keys/keys')
+const session = require('express-session')
+const { MONGODB_URI, SESSION_SECRET } = require('./keys/keys')
 
 const PORT = process.env.PORT || 3000
 const dev = process.env.NODE_ENV !== 'production'
@@ -16,6 +18,11 @@ app
 	.then(() => {
 		const server = express()
 
+		const registrationRoute = require('./server/routs/registrationRoute')
+		const authRoute = require('./server/routs/authRoute')
+		const orderTicketRoute = require('./server/routs/orderTicketRoute')
+
+
 		async function start() {
 			await mongoose.connect(MONGODB_URI, {
 				useNewUrlParser: true,
@@ -26,6 +33,15 @@ app
 		start()
 		server.set('views', 'pages')
 		server.use(express.urlencoded({ extended: true }))
+		server.use(session({
+			secret: SESSION_SECRET,
+			resave: false,
+			saveUninitialized: false
+		}))
+
+		server.use('/add', registrationRoute)
+		server.use('/order', orderTicketRoute)
+		server.use('/auth', authRoute)
 
 		server.all('*', (req, res) => handle(req, res))
 

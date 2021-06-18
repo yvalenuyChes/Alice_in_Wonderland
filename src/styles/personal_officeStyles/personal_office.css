@@ -1,0 +1,103 @@
+.personal-office__container{
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.personal-office__header{
+	padding: 100px 0px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.personal-office__user-img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.personal-office__user-img img{
+	height: 100%;
+	width: 100%;
+}
+
+hr{
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+.personal-office__form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.personal-office__form-item{
+	padding: 10px 0px;
+}
+
+.personal-office__ticket-list-body{
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 20px 20px; 
+	justify-items: center;
+}
+
+.personal-office__ticket-list-title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+	text-align: center;
+	padding: 50px 0px 30px 0px;
+}
+
+.ticket__body{
+	font-size: 18px;
+	width: 400px;
+	height: 200px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.ticket__header{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	height: 50px;
+}
+
+.ticket__info{
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+}
+
+
+
+
+.plane{
+	background-image: url(../../img/slider/plane.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.train{
+	background-image: url(../../img/slider/train.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bus{
+	background-image: url(../../img/slider/bus.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

@@ -13,14 +13,14 @@ export default function RegistrationPage() {
 			<div className={classes.container}>
 				<form
 					method="POST"
-					action="/enter"
+					action="/add"
 					className="tab_form"
 				>
 					<div className="inputBox">
 						<Input
 							label="Введите e-mail"
 							type="email"
-							name="regEmail"
+							name="email"
 							inputMode="email"
 						/>
 					</div>
@@ -28,7 +28,7 @@ export default function RegistrationPage() {
 						<Input
 							label="Введите пароль"
 							type="password"
-							name="regPassword"
+							name="password"
 							inputMode="text"
 						/>
 					</div>
@@ -44,7 +44,7 @@ export default function RegistrationPage() {
 						<Input
 							label="Введите своё имя"
 							type="text"
-							name="regName"
+							name="name"
 							inputMode="text"
 						/>
 					</div>
