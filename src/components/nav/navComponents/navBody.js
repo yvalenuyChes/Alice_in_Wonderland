@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useSelector, useDispatch } from 'react-redux'
 import Modal from '@material-ui/core/Modal'
+import Link from 'next/link'
 import classNames from 'classnames'
 import { MainPageTransitions, KanadaPageTransitions } from './navLinks'
 import AccordionBlock from '../../accordion/accordion'
@@ -34,6 +36,14 @@ export default function NavBody() {
 						title="Канада"
 						content={<KanadaPageTransitions />}
 					/>
+				</div>
+				<div
+					onClick={() => dispatch({ type: 'TOGGLE_NAV' })}
+					className="nav_phones__body-item"
+				>
+					<Link href="/personal_office">
+						<a >Личный кабинет</a>
+					</Link>
 				</div>
 				<div className="nav_phones__body-item login">
 					<div

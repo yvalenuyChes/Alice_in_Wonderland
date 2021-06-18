@@ -44,11 +44,21 @@ transition: all 500ms ease;
 	color: #fff;
 	font-size: 18px;
 }
+.nav_phones__body-item {
+	text-align: center;
+}
 
+.nav_phones__body-item a{
+    z-index: 998;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Oswald",sans-serif;
+}
 
 /*  here will be auth/ligim style   */
 
 #auth{
+	margin: 10px 0px 0px 0px;
 	cursor: pointer;
 	font-size: 20px;
 	text-align: center;

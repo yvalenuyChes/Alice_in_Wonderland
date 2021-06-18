@@ -17,6 +17,7 @@ import '../src/styles/countrieBlockStyles/countrieBlockGallery.css'
 import '../src/styles/countriesStyles/kanadaParrapalax/kanadaParrapalax.css'
 import '../src/styles/countriesStyles/cardStyles/cardStyles.css'
 import '../src/styles/buttonToTopStyles/buttonToTop.css'
+import '../src/styles/personal_officeStyles/personal_office.css'
 
 
 
