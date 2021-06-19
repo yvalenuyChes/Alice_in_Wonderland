@@ -1,7 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import Slider from 'react-slick'
 import classes from '../../styles/slider/sliderStyles.module.scss'
-import SliderForm from './sliderForm'
+import BusTicketForm from './busTicketForm'
+import TrainTicketForm from './trainTicketForm'
+import PlaneTicketForm from './planeTicketForm'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
@@ -17,17 +19,17 @@ export default function SliderBlock() {
 	return (
 		<div className={classes.slider}>
 			<Slider {...settings}>
-				<SliderForm
+				<BusTicketForm
 					sliderTitle="Автобус"
-					sliderFon={classes.slider__busBackground}
+					sliderBackground={classes.slider__busBackground}
 				/>
-				<SliderForm
+				<TrainTicketForm
 					sliderTitle="Поезд"
-					sliderFon={classes.slider__trainBackground}
+					sliderBackground={classes.slider__trainBackground}
 				/>
-				<SliderForm
+				<PlaneTicketForm
 					sliderTitle="Самолет"
-					sliderFon={classes.slider__planeBackground}
+					sliderBackground={classes.slider__planeBackground}
 				/>
 			</Slider>
 		</div>

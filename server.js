@@ -20,7 +20,10 @@ app
 
 		const registrationRoute = require('./server/routs/registrationRoute')
 		const authRoute = require('./server/routs/authRoute')
-		const orderTicketRoute = require('./server/routs/orderTicketRoute')
+		const orderBusTicketRoute = require('./server/routs/orderBusTicketRoute')
+		const orderTrainTicketRoute = require('./server/routs/orderTrainTicketRoute')
+		const orderPlaneTicketRoute = require('./server/routs/orderPlaneTicketRoute')
+		const middleware = require('./server/middleware/sessionVariables')
 
 
 		async function start() {
@@ -36,12 +39,17 @@ app
 		server.use(session({
 			secret: SESSION_SECRET,
 			resave: false,
-			saveUninitialized: false
+			saveUninitialized: false,
+			isAuthenticated: false
 		}))
 
+		server.use(middleware)
+
 		server.use('/add', registrationRoute)
-		server.use('/order', orderTicketRoute)
-		server.use('/auth', authRoute)
+		server.use('/login', authRoute)
+		server.use('/order_bus_ticket', orderBusTicketRoute)
+		server.use('/order_train_ticket', orderTrainTicketRoute)
+		server.use('/order_plane_ticket', orderPlaneTicketRoute)
 
 		server.all('*', (req, res) => handle(req, res))
 
