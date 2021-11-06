@@ -96,7 +96,21 @@
 	opacity: 1;
 }
 
+.content__price{
+	color: white;
+	font-size: calc(20px + 10 * ((100vw - 320px) / (1280 - 320)));
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	opacity: 1;
+}
+
 .img__wrapper:hover .content__title{
+	transition: .5s ease;
+	opacity: 0;	
+}
+
+.img__wrapper:hover .content__price{
 	transition: .5s ease;
 	opacity: 0;	
 }

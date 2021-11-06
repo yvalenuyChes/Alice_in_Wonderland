@@ -17,6 +17,7 @@ export default function CountrieBlockGallery() {
 					imgSrc={niderlandsImg}
 					title="Нидерланды"
 					content__text_subtitle={NIRERLAND_TEXT}
+					value='3500'
 				/>
 			</div>
 			<div className="maldives">
@@ -24,6 +25,7 @@ export default function CountrieBlockGallery() {
 					imgSrc={maldivesImg}
 					title="Мальдивы"
 					content__text_subtitle={MALDIVES_TEXT}
+					value='4000'
 				/>
 			</div>
 			<div className="vengria">
@@ -31,6 +33,7 @@ export default function CountrieBlockGallery() {
 					imgSrc={vengriaImg}
 					title="Венгрия"
 					content__text_subtitle={VENGRIA_TEXT}
+					value='1500'
 				/>
 			</div>
 			<div className="mram">
@@ -39,6 +42,7 @@ export default function CountrieBlockGallery() {
 					imgSrc={mramCanyonImg}
 					title="Мраморный каньон"
 					content__text_subtitle={MRAM_KANYON_TEXT}
+					value='200'
 				/>
 			</div>
 			<div className="newYork">
@@ -46,6 +50,7 @@ export default function CountrieBlockGallery() {
 					imgSrc={newYorkImg}
 					title="Нью Йорк"
 					content__text_subtitle={NY_TEXT}
+					value='2000'
 				/>
 			</div>
 			<div className="kanada">
@@ -53,6 +58,7 @@ export default function CountrieBlockGallery() {
 					imgSrc={kanadaImg}
 					title="Канада"
 					content__text_subtitle={KANADA_TEXT}
+					value='1000'
 				/>
 			</div>
 		</div>

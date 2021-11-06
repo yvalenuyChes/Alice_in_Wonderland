@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import { Provider } from 'react-redux'
 import { useStore } from '../src/redux/rootReducer'
+import { getSession } from "../setSession/get-session"
 import '../src/styles/_style.scss'
 import '../src/styles/scene.css'
 import '../src/styles/countrieBlockStyles/mainContentImg.css'
@@ -21,8 +22,22 @@ import '../src/styles/personal_officeStyles/personal_office.css'
 
 
 
+export async function getServerSideProps({ req, res }) {
+	const data = await getSession(req, res)
+	console.log(data)
+	return {
+		props: {
+			data
+		}
+	}
+}
 
-export default function MyApp({ Component, pageProps }) {
+
+export default function MyApp({ Component, pageProps, data }) {
+
+
+
+	console.log(data)
 
 	const store = useStore(pageProps.initialReduxState)
 

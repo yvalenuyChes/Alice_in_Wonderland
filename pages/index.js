@@ -7,9 +7,9 @@ import Advantages from '../src/containers/AdvantagesBlock'
 import Footer from '../src/containers/Footer'
 
 
-export default function Main() {
 
-	// console.log(req.body)
+
+export default function Main() {
 
 	return (
 		<MainPage>
