@@ -1,0 +1,66 @@
+.nav_phones__body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 10;
+	overflow: auto;
+	transition: .3s all ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0, .6);
+	top: -150%;
+}
+
+.nav_phones__body.active{
+	top: 0;
+}
+
+.nav_phones__body-itemWrapper{
+	padding: 100px 0px 20px;
+}
+
+.nav_phones__body.enter{
+transform:translateY(-100%);
+}
+
+.nav_phones__body.enter-done{
+transform:translateY(0);
+}
+
+.nav_phones__body.enter-active{
+transition: all 500ms ease;
+transform:translateY(0);
+}
+
+.nav_phones__body.exit{
+transform:translateY(-100%);
+transition: all 500ms ease;
+}
+
+.navMobileLink a{
+	color: #fff;
+	font-size: 18px;
+}
+.nav_phones__body-item {
+	text-align: center;
+}
+
+.nav_phones__body-item a{
+    z-index: 998;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Oswald",sans-serif;
+}
+
+/*  here will be auth/ligim style   */
+
+#auth{
+	margin: 10px 0px 0px 0px;
+	cursor: pointer;
+	font-size: 20px;
+	text-align: center;
+	color: #0ff;
+}	

@@ -1,0 +1,26 @@
+.slider{
+	position: relative;
+  overflow: hidden;
+}
+
+.slider__busBackground{
+	height: 100%;
+	background: url('../../img/slider/bus.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.slider__trainBackground{
+	height: 100%;
+	background: url('../../img/slider/train.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+.slider__planeBackground{
+	height: 100%;
+	background: url('../../img/slider/plane.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}

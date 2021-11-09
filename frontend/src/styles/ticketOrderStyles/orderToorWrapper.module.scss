@@ -1,0 +1,11 @@
+@import '../mixins';
+@import '../variables';
+
+.orderToor{
+	margin: $indent;
+
+	&__title{
+		@include title(black, 30px);
+	}
+}
+

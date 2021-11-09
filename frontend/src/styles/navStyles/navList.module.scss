@@ -1,0 +1,16 @@
+@import '../variables';
+
+.nav__list{
+	cursor: pointer;
+	position: absolute;
+
+	a{
+		color: $colorHeader;
+		transition: $commonTransition;
+
+		&:hover{
+			color: aqua;
+			transition: $commonTransition;
+		}
+	}
+}
