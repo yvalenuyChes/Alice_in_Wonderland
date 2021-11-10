@@ -1,3 +1,5 @@
+const withImages = require('next-images')
+
 module.exports = {
    reactStrictMode: true,
    publicRuntimeConfig: {
@@ -6,3 +8,6 @@ module.exports = {
       PRODUCTION: false
    }
 }
+
+module.exports =  withImages()
+

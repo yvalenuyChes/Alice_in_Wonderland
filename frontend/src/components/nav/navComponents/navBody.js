@@ -4,13 +4,18 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useSelector, useDispatch } from 'react-redux'
 import Modal from '@material-ui/core/Modal'
+import { useRouter } from "next/dist/client/router"
 import Link from 'next/link'
 import classNames from 'classnames'
 import { MainPageTransitions, KanadaPageTransitions } from './navLinks'
 import AccordionBlock from '../../accordion/accordion'
 import ModalBody from './navModalBody'
+import { isAuth , signout} from '../../../../actions/auth'
+
 
 export default function NavBody() {
+
+	const router = useRouter()
 
 	const navOpen = useSelector(state => state.navOpen)
 	const popupOpen = useSelector(state => state.popupOpen)
@@ -46,10 +51,18 @@ export default function NavBody() {
 					</Link>
 				</div>
 				<div className="nav_phones__body-item login">
+				{isAuth() ?
 					<div
+						onClick={ () => signout(() => router.push('/'))}
+						id="auth"
+					>Выйти</div>
+					:
+						<div
 						onClick={() => dispatch({ type: 'OPEN_MODAL_WINDOW' }, { type: 'NAV_OPEN' })}
 						id="auth"
 					>Авторизация</div>
+				}
+					
 					<Modal
 						open={popupOpen}
 					>

@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import getConfig from 'next/config'
 
 const { publicRuntimeConfig } = getConfig()

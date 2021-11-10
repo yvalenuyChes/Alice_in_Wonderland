@@ -10,16 +10,18 @@ export default function InputSlider(
 		label,
 		type,
 		name,
-		inputMode
+		inputMode,
+		value,
+		onChange
 	}
 ) {
 
-	const [value, changeValue] = useState('')
+	// const [valueInput, changeValue] = useState(value)
 	const [isFocus, changeFocus] = useState(false)
 
-	const onChange = event => {
-		changeValue(event.target.value)
-	}
+	// const onChange = event => {
+	// 	changeValue(event.target.value)
+	// }
 
 	const toggleOnFocusInput = classNames({
 		'input__box-order-ticket': true,
@@ -37,7 +39,7 @@ export default function InputSlider(
 					id={name}
 					name={name}
 					onChange={onChange}
-					value={value.trim()}
+					value={value}
 					onFocus={() => changeFocus(prev => !isFocus)}
 					onBlur={() => changeFocus(prev => !isFocus)}
 					className="input-order-ticket"
